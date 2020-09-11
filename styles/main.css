@@ -29,8 +29,7 @@ iframe {
 }
 
 img#about, img#hello, img#likes, img#pictures {
-	ma
-	rgin-bottom: -20px;
+	margin-bottom: 0px;
 }
 
 img.paintcolors, img#sendButtonImg, img#clearButtonImg {
@@ -40,12 +39,11 @@ img.paintcolors, img#sendButtonImg, img#clearButtonImg {
 img.paintcolors, img#sendButtonImg, img#clearButtonImg, canvas#imageView {
   position: relative;
   z-index: 2;
-  top: -270px;
-  bottom: -270px;
 }
 
 img#leavemessage {
-  width: 930px;
+  width: 600px;
+  height: auto;
 }
 
 img#sendButtonImg, img#clearButtonImg {
@@ -53,23 +51,25 @@ img#sendButtonImg, img#clearButtonImg {
   height: auto;
 }
 
+img#buycrazygif {
+  margin-top:200px;
+  width:600px;
+  height:auto;
+}
+
+img#fakequotes {
+  margin-bottom: 0px;
+}
+
 img#copyhome, img#contact {
   position: relative;
-  top: -270px;
 }
 
 img#copyhome {
-  margin-bottom: -250px;
 }
 
 img.cv {
   width: 800px;
-}
-
-img#balloon {
-  margin: 0px auto;
-  width: 100%;
-  height: auto;
 }
 
 img.paintcolors {
