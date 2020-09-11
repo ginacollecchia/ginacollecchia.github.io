@@ -1,16 +1,17 @@
+.row {
+  text-align: center;
+}
+
 .row#home {
   background-color: #466fbb;
-  text-align: center;
 }
 
 .row#index, .row#kitty {
   background-color: #42cb4c;
-  text-align: center;
 }
 
 .row#cv {
   background-color: #d6c4bf;
-  text-align: center;
 }
 
 .span16 {
@@ -22,14 +23,11 @@ img, iframe {
   border: 0px;
   margin: 10px auto;
   width: 600px;
+  height: auto;
 }
 
 iframe {
   margin: 30px auto;
-}
-
-img#about, img#hello, img#likes, img#pictures {
-	margin-bottom: 0px;
 }
 
 img.paintcolors, img#sendButtonImg, img#clearButtonImg {
@@ -41,11 +39,6 @@ img.paintcolors, img#sendButtonImg, img#clearButtonImg, canvas#imageView {
   z-index: 2;
 }
 
-img#leavemessage {
-  width: 600px;
-  height: auto;
-}
-
 img#sendButtonImg, img#clearButtonImg {
   width: 150px;
   height: auto;
@@ -53,8 +46,6 @@ img#sendButtonImg, img#clearButtonImg {
 
 img#buycrazygif {
   margin-top:200px;
-  width:600px;
-  height:auto;
 }
 
 img#fakequotes {
@@ -65,27 +56,12 @@ img#copyhome, img#contact {
   position: relative;
 }
 
-img#copyhome {
-}
-
-img.cv {
-  width: 800px;
-}
-
 img.paintcolors {
   width: 60px;
 }
 
 img#buy {
 	width: 900px;
-}
-
-img#continue {
-	width: 700px;
-}
-
-img#quotes {
-	width: 600px;
 }
 
 #drawbox { 
@@ -155,6 +131,14 @@ a#clearButton, a#sendButton {
   height: 50px; 
   background: none;
   border: none;
+}
+
+img#photography, img#about {
+  margin-top: -10px;
+}
+
+img.cv {
+  width: 800px;
 }
 
 /* mobile view */
