@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Icons of Sound</title>
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<!--<link href="bootstrap-responsive.css" rel="stylesheet" type="text/css">-->
+	<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<div id="titleimage">
+		<img src="images/icons_title_image.gif" width="800px" />
+			<p id="subheading">The Acoustics of Hagia Sophia</p>
+	</div>
+<div id="rectangle">
+	<div id="toolbar">
+		
+	</div>
+
+	<h2>Methodology</h2>
+	<br>
+	<div class="row">
+		<div class="span8">
+			<p id="aural1">Sound carries with it an imprint of the space in which it originates. Like any other space, the Hagia Sophia has a characteristic sound. Because of its dimensions and physical features, sound produced within the Hagia Sophia carries for a very long time. There are established methodologies to try to isolate the effects that a space has on acoustic signals. What follows here is a step-by-step account of how we captured the acoustics of Hagia Sophia.</p>
+		</div>
+		<!--<div class="span2">
+			<img src="images/hagiatiny.png" />
+			
+		</div>-->
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span3">
+			<img src="images/hagia sophia floorplan.png" />
+			<p>The floorplan of the Memorial Church.</p>
+		</div>
+		<div class="span5">
+			<video id="trisagionvideo" width="100%" controls>
+				<source src="videos/Trisagion MC wet-dry split film.m4v" type="video/mp4">
+			</video>
+			<p id="trisagioncaption"><em><strong>Sound and Space.</strong></em> Above, a moving spectrogram shows how a studio-recorded "dry" signal is transformed by the acoustics of Memorial Church. Red areas indicate sound components with high energy. Note how these components are smeared by Memorial Church in the "wet", reverberant signal.</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<div class="row">
+		<div class="span3">
+			<p id="balloon">The simple sound of a balloon pop reveals the acoustic characteristics of a room. We call this an <em><strong>impulse response</strong></em>. The graph to the right depicts the impulse response of Stanford University's Memorial Church. The following video of a balloon pop shows how this impulse response was recorded.</p>
+		</div>
+		<div class="span5">
+			<img src="images/memchuwaveform.png" />
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row">
+		<div class="span8">
+			<video id="balloonpop" width="100%" controls>
+				<source src="videos/MemChu balloon pop.mp4" type="video/mp4">
+			</video>
+			<p>Video of popping a balloon in Memorial Church to capture the church's acoustic signature.</p>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="span8">
+			<p id="trisagionmemchu">In a room, each pulse trails behind it a pattern of reflected energy, which is the room's impulse response. Using a mathematical operation called <em><strong>convolution</strong></em>, we were able to synthesize the Greek hymn <em>Trisagion</em>, recorded in a studio, with the reverberant qualities of Memorial Church.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span8">
+			<video id="trisagionwet" width="100%" controls>
+				<source src="videos/Trisagion MC PoC splice film.m4v" type="video/mp4">
+			</video>
+			<p>The hymn <em>Trisagion</em> recorded in a studio and synthesized to sound as if it were recorded in Stanford's Memorial Church.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span8">
+			<p id="hagiaaural">We did the same thing in Hagia Sophia: We recorded a few balloon pops and attempted to extract its acoustic nature. This recording's frequency response is depicted below <em>(left)</em>. Furthermore, we built a mathematical model that simulates this impulse response based on scientific theory of sound propagation. The modeled frequency response is also depicted below <em>(right)</em>.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span4">
+			<img src="images/hsbr.png">
+			<p>The recorded balloon pop at Hagia Sophia.</p>
+		</div>
+		<div class="span4">
+			<img src="images/hsir.png">
+			<p>The modeled impulse response of Hagia Sophia.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span3">
+			<p id="capella">We recorded the vocal group Capella Romana performing the <em>Prokeimenon</em> in a virtual Hagia Sophia. To the right is a video of the chanters performing at Stanford's Center for Computer Research in Music and Acoustics (CCRMA), in the room where the dry signals were recorded. Each vocalist is wearing earbuds and listening to themselves perform as if they were inside the Hagia Sophia.</p>
+		</div>
+		<div class="span5">
+			<video id="Prokeimenon2" width="100%" controls>
+				<source src="videos/prokeimenon-take2-720p.mov" type="video/mp4">
+			</video>
+			<p>The vocal group Capella Romana performs <em>Prokeimenon</em> at CCRMA.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span8">
+			<p id="prokeimenon">Finally, we use our measurements and model to process the CCRMA recording of the chanters with the acoustics of the Hagia Sophia.</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="row">
+		<div class="span8">
+			<video id="Prokeimenon" width="100%" controls>
+				<source src="videos/Prokeimenon__stereo_111219B_ftgram_stereo.m4v" type="video/mp4">
+			</video>
+			<p>The recording of <em>Prokeimenon</em> by Capella Romana is  synthesized to sound as if it were recorded in the Hagia Sophia.</p>
+		</div>
+	</div>
+
+</div>
+<div id="footer2">
+	<div class="row">
+		<div class="span2" id="bottomjunk1">
+			<img src="images/stanfordlogo.png" width="80%" />
+		</div>
+		<div class="span4 offset1" id="bottomjunk2">
+			<img src="images/ccrma.png" width="80%"/>
+		</div>
+		<div class="span2 offset1" id="bottomjunk3">
+			<img src="images/deptart.png" width="80%"/>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="span8"><p id="copy" text-align="center">&copy; Copyright 2013 Icons of Sound. The Icons of Sound team includes Bissera Pentcheva and Jonathan Abel <br> with Konstantine Buhler, Regina Collecchia, Miriam Kolar, Travis Skare, and Mike Wilson.</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

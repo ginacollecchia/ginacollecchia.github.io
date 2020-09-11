@@ -1,0 +1,295 @@
+.row#home {
+  background-color: #466fbb;
+  text-align: center;
+}
+
+.row#index, .row#kitty {
+  background-color: #42cb4c;
+  text-align: center;
+}
+
+.row#cv {
+  background-color: #d6c4bf;
+  text-align: center;
+}
+
+.span16 {
+  width: 100%;
+}
+
+img, iframe {
+  display: block;
+  border: 0px;
+  margin: 10px auto;
+  width: 600px;
+}
+
+iframe {
+  margin: 30px auto;
+}
+
+img#about, img#hello, img#likes, img#pictures {
+	ma
+	rgin-bottom: -20px;
+}
+
+img.paintcolors, img#sendButtonImg, img#clearButtonImg {
+  display: inline;
+}
+
+img.paintcolors, img#sendButtonImg, img#clearButtonImg, canvas#imageView {
+  position: relative;
+  z-index: 2;
+  top: -270px;
+  bottom: -270px;
+}
+
+img#leavemessage {
+  width: 930px;
+}
+
+img#sendButtonImg, img#clearButtonImg {
+  width: 150px;
+  height: auto;
+}
+
+img#copyhome, img#contact {
+  position: relative;
+  top: -270px;
+}
+
+img#copyhome {
+  margin-bottom: -250px;
+}
+
+img.cv {
+  width: 800px;
+}
+
+img#balloon {
+  margin: 0px auto;
+  width: 100%;
+  height: auto;
+}
+
+img.paintcolors {
+  width: 60px;
+}
+
+img#buy {
+	width: 900px;
+}
+
+img#continue {
+	width: 700px;
+}
+
+img#quotes {
+	width: 600px;
+}
+
+#drawbox { 
+  width: 600px; 
+  height: 600px; 
+  text-align: center; 
+  margin: 0 auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#drawbox:active { 
+  cursor: pointer !important; 
+}
+  
+#imageView, #imageView:active {  
+  cursor: pointer; 
+}
+
+a#clearButton, a#sendButton { 
+  color: #900; 
+  font: bold 2em/2em Helvetica, Arial, Sans-serif;
+}
+
+#message { 
+  display: none; 
+}	
+
+#drawTools img { 
+  cursor: pointer; 
+}
+
+.bigskip {
+  height: 150px;
+}
+
+#typewriter { 
+  text-align: left; 
+  position: absolute;
+  top: 30%; 
+  left: 35%; 
+  font-family: Courier; 
+  font-size: 30px;
+}
+
+[class*="span"] {
+  margin-left: 0px;
+}
+
+#lastnamepronunciation {
+  width: 230px;
+  height: 50px;
+  border: none;
+  background: none;
+  margin-top: -300px;
+  margin-left: -400px;
+}
+
+#playmusic {
+  margin-left: 320px; 
+  margin-top: -390px; 
+  width: 150px; 
+  height: 50px; 
+  background: none;
+  border: none;
+}
+
+/* mobile view */
+@media only screen and (max-device-width: 480px) {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+  
+img#buySticker {
+	width: 252px;
+	height: auto;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+/* Form stuff */
+form {
+	width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+label, input, select {
+	display: inline-block;
+	margin-left: 38px;
+}
+
+label {
+	width: 30%;
+	text-align: right;
+}
+
+label + input {
+	width: 30%;
+	margin: 0 0% 0 1%;
+}
+
+label + select {
+	width: 10%;
+	margin: 0 0% 0 1%;
+}
+
+input + input {
+	float: right;
+}
+
+img#bookcoverSP {
+	width: 280px;
+	height: auto;
+	border: 2px solid;
+	border-color: black;
+	margin: 10px auto;
+	display: block;
+}
+
+input#buynow, input#buynow2 {
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+	width: 120px;
+}
+
+p.buyheader {
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+
+p#booktitle {
+	font-size: 30px;
+	line-height: 110%;
+}
+
+.buytext {
+	width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+#linebreak1 {
+	border: 1px dashed;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+img#invisibleimg {
+	height: 1px;
+	width: 1px;
+	margin: 0 auto;
+	display: block;
+}
+
+img#copybuy {
+	margin: 0 auto;
+	display: block;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+form#pdfcopy {
+	margin: 20px auto;
+	display: block;
+}
+
+p.quotee {
+	margin-top:-10px;
+}
+
+p.quotee, p.actualquotes {
+	width: 470px;
+}
+
+img.circlepic {
+	width: 120px;
+	height: auto;
+	margin-top: -145px;
+	margin-left: 480px;
+	margin-bottom: 45px;
+}
+
+img#stephenpope {
+	margin-top: -185px;
+	margin-bottom: 65px;
+}
+
+img#ginacollecchia {
+	margin-top: -160px;
+	margin-bottom: 40px;
+}
+
+div#wall {
+  height: 600px;
+}
