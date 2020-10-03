@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
   
   <title>Gina Collecchia</title>
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/ginadraw.js"></script>
@@ -16,34 +16,35 @@
 
 </head>
 
-<body onload="setup()">
-  <div class="row" id="home">
+<body onload="setup()" id="home">
+  <div class="container">
+  <div class="row">
     <div class="span16">
       
       <!-- Title -->
-      <img id="title" src="img/header2020.gif" alt="GINA C. attempts the INTERNET" >
+      <img class="home" id="title" src="img/header2020.gif" alt="GINA C. attempts the INTERNET" >
 	  
       <!-- Stickied book link -->
-	    <a href="numbers-and-notes.html"><img id="buySticker" src="img/buyButton_sale.gif" alt="Buy Numbers and Notes directly from me!" ></a>
+	    <a href="numbers-and-notes.html"><img class="home" id="buySticker" src="img/buyButton_sale.gif" alt="Buy Numbers and Notes directly from me!" ></a>
       
       <!-- Resume -->
-      <a href="cv.html"><img src="img/reslink2.gif" alt="CHECK OUT MY RESUME!"></a>
+      <a href="cv.html"><img class="home" src="img/resumeLink2020.gif" alt="CHECK OUT MY RESUME!"></a>
       
-      <!-- Thesis -->
-      <a href="pdf/TheEntropyOfMusicalClassification.pdf"><img src="img/thesislink2.gif" alt="READ MY THESIS ON
-MUSIC INFORMATION RETRIEVAL AND CONDITIONAL ENTROPY >>"></a>
+      <!-- Link to Hackaday portfolio -->
+      <a href="https://hackaday.io/projects/hacker/904458" target="_blank"><img class="home" src="img/portfolioLink2020.gif" alt="CHECK OUT MY PORTFOLIO OF WORK >>"></a>
 
       <!-- Book link -->
-      <a href="numbers-and-notes.html"><img src="img/booklink4.gif" alt="LEARN ABOUT MY BOOK, NUMBERS AND NOTES: AN INTRODUCTION TO MUSICAL SIGNAL PROCESSING (out this winter from PSIPress!!!)"></a>
-      
+      <a href="numbers-and-notes.html"><img class="home" src="img/booklink4.gif" alt="LEARN ABOUT MY BOOK, NUMBERS AND NOTES: AN INTRODUCTION TO MUSICAL SIGNAL PROCESSING (out this winter from PSIPress!!!)"></a>
+
+      <!-- Thesis -->
+      <a href="pdf/TheEntropyOfMusicalClassification.pdf"><img class="home" src="img/thesislink2.gif" alt="READ MY THESIS ON
+MUSIC INFORMATION RETRIEVAL AND CONDITIONAL ENTROPY >>"></a>
+
       <!-- AES 2012 paper link -->
-      <a href="https://ccrma.stanford.edu/groups/chavin/publications/AES2012_ChavinInteriorModel.pdf"><img src="img/paperLink.gif" alt="READ MY AUDIO ENGINEERING SOCIETY PAPER ON A PHYSICAL MODEL OF THE NUTSO ACOUSTICS IN PERU!"></a>
-      
-      <!-- Link to portfolio -->
-      <!--<a href="portfolio.html"><img src="img/portfolioLink2020.gif" alt="CHECK OUT MY PORTFOLIO OF WORK >>"></a> -->
+      <!--<a href="https://ccrma.stanford.edu/groups/chavin/publications/AES2012_ChavinInteriorModel.pdf"><img src="img/paperLink.gif" alt="READ MY AUDIO ENGINEERING SOCIETY PAPER ON A PHYSICAL MODEL OF THE NUTSO ACOUSTICS IN PERU!"></a>-->
       
       <!-- Hello -->
-      <img id="hello" src="img/hello2020.gif" alt="HELLO!!! MY NAME IS REGINA COLLECCHIA, BUT YOU CAN CALL ME GINA. THIS IS A LOT GIRLIER THAN I TYPICALLY PRESENT MYSELF! OH WELL!!!!!">
+      <img class="home" id="hello" src="img/hello2020.gif" alt="HELLO!!! MY NAME IS REGINA COLLECCHIA, BUT YOU CAN CALL ME GINA. THIS IS A LOT GIRLIER THAN I TYPICALLY PRESENT MYSELF! OH WELL!!!!!">
       <!-- Name pronunciation audio -->
       <audio id="collecchia" preload="true">
       	<source src="sounds/collecchia.mp3" type="audio/mp3">
@@ -53,43 +54,40 @@ MUSIC INFORMATION RETRIEVAL AND CONDITIONAL ENTROPY >>"></a>
       <button id="lastnamepronunciation" onclick="document.getElementById('collecchia').play();"></button>
       
       <!-- About -->
-      <img id="about" src="img/about.gif" alt="I AM AN AUTHOR OF A BOOK ON MUSIC TECHNOLOGY, AN AUDIO HARDWARE ENGINEER, A DATA SCIENTIST, AND MORE!" >
+      <img class="home" id="about" src="img/about2020.gif" alt="I AM AN AUTHOR OF A BOOK ON MUSIC TECHNOLOGY, AN AUDIO HARDWARE ENGINEER, A DATA SCIENTIST, AND MORE!" >
       <!-- Music audio -->
-    	<audio id="music" preload="auto">
+    	<!--<audio id="music" preload="auto">
     		<source src="sounds/music.mp3" type="audio/mp3">
     		<source src="sounds/music.ogg" type="audio/ogg">
     		<source src="sounds/music.wav" type="audio/wav">
     	</audio>
-      <button id="playmusic" onclick="document.getElementById('music').play();"></button>
+      <button id="playmusic" onclick="document.getElementById('music').play();"></button>-->
+            
+      <!-- Job -->
+      <a href="mailto:gina@ginacollecchia.com"><img class="home" id="job" src="img/job2.gif" alt="AND I WOULD VERY MUCH LIKE A JOB THANK YOU VERY MUCH!!!!1"></a>
+        
+      <!-- My likes -->
+      <img class="home" id="likes" src="img/likes2020.gif" alt="HERE ARE SOME OF MY LIKES: SCIENCE, PORTLAND OREGON, BRIAN ENO, COFFEE!, BIKING (SOMETIMES), ETHIOPIAN FOOD, PINBALL, GRAPHIC NOVELS, AND CAMPING.">
+      
+      <!-- Alice the cat -->
+      <a href="kitty.html"><img class="home" id="alice" src="img/alice-link.gif" alt="MEET ALICE, A VERY INQUISITIVE SCOTTISH FOLD KITTEH!"></a>
+
+      <!-- Last Christmas -->
+    	<a href="http://soundcloud.com/ginacollecchia/last-christmas-was-effed" target="_blank"> <img class="home" src="img/proTools1.gif" alt="I REINVENTED A XMAS SONG BY GEORGE MICHAEL. YOU SHOULD HEAR IT!!!!!!"> </a>
+
+      <!-- Pianostrobe -->
+    	<!--<a href="https://vimeo.com/68817812" target="_blank"><img src="img/pianostrobe-link.gif" alt="LISTEN TO PIANOSTROBE, AN AUDIO/VISUAL PIECE MADE FROM VIDEO SHOT AT THE EXPLORATORIUM!!!!!"></a>-->
       
       <!-- Photography -->
+      <img class="home" id="photography" src="img/photography2020.gif" alt="SEE THE PICTURES I TAKE ON FLICKR, INSTAGRAM, AND A WEBSITE I MADE WHEN I WANTED TO BE A PHOTOGRAPHR!!!" usemap="#photographyMap">  
       <map name="photographyMap">
-      	<!--<area shape="rect" alt="FLICKR" coords="251,89,393,142" href="http://www.flickr.com/photos/recphoto/sets/72157628407762099/show/" target="_blank">
-      	<area shape="rect" alt="INSTAGRAM" coords="397,89,585,142" href="http://www.instagram.com/ginasees/" target="_blank">
-      	<area shape="rect" alt="GINASEES" coords="27,150,568,337" href="http://www.ginasees.com/" target="_blank">-->
         <area shape="rect" alt="FLICKR" coords="251,69,393,122" href="http://www.flickr.com/photos/recphoto/sets/72157628407762099/show/" target="_blank">
         <area shape="rect" alt="INSTAGRAM" coords="397,69,585,122" href="http://www.instagram.com/ginasees/" target="_blank">
         <area shape="rect" alt="GINASEES" coords="27,130,568,317" href="http://www.ginasees.com/" target="_blank">
       </map>
-      <img id="photography" src="img/photography2020.gif" alt="SEE THE PICTURES I TAKE ON FLICKR, INSTAGRAM, AND A WEBSITE I MADE WHEN I WANTED TO BE A PHOTOGRAPHR!!!" usemap="#photographyMap">  
-      
-      <!-- Job -->
-      <a href="mailto:gina@ginacollecchia.com"><img id="job" src="img/job2.gif" alt="AND I WOULD VERY MUCH LIKE A JOB THANK YOU VERY MUCH!!!!1"></a>
-        
-      <!-- My likes -->
-      <img id="likes" src="img/likes2020.gif" alt="HERE ARE SOME OF MY LIKES: SCIENCE, PORTLAND OREGON, BRIAN ENO, COFFEE!, BIKING (SOMETIMES), ETHIOPIAN FOOD, PINBALL, GRAPHIC NOVELS, AND CAMPING.">
-      
-      <!-- Alice the cat -->
-      <a href="kitty.html"><img id="alice" src="img/alice-link.gif" alt="MEET ALICE, A VERY INQUISITIVE SCOTTISH FOLD KITTEH!"></a>
-
-      <!-- Last Christmas -->
-    	<a href="http://soundcloud.com/ginacollecchia/last-christmas-was-effed"><img src="img/proTools1.gif" alt="I REINVENTED A XMAS SONG BY GEORGE MICHAEL. YOU SHOULD HEAR IT!!!!!!"></a>
-
-      <!-- Pianostrobe -->
-    	<a href="https://vimeo.com/68817812"><img src="img/pianostrobe-link.gif" alt="LISTEN TO PIANOSTROBE, AN AUDIO/VISUAL PIECE MADE FROM VIDEO SHOT AT THE EXPLORATORIUM!!!!!"></a>
 
       <!-- DRAW ON MY WALL PLZ -->
-    	<img id="leavemessage" src="img/drawMeAMessage2020.gif" alt="NOW YOU CAN DRAW MESSAGES AND SEND THEM TO ME!">
+    	<img class="home" id="leavemessage" src="img/drawMeAMessage2020.gif" alt="NOW YOU CAN DRAW MESSAGES AND SEND THEM TO ME!">
       <div id="wall">
         <div id="drawTools">
           <img class="paintcolors" alt="black" src="img/blackColor000000.gif" onclick="setTool(new tools.pencil('#000', 8))" />
@@ -120,20 +118,18 @@ MUSIC INFORMATION RETRIEVAL AND CONDITIONAL ENTROPY >>"></a>
       </div>
 	  
 	  <!-- Buy it now gif -->
-  	<a href="http://www.ginacollecchia.com/numbers-and-notes.html"><img id="buycrazygif" src="img/buyAnimated2.gif" alt="BUY NUMBERS AND NOTES"></a>
+  	<a href="http://www.ginacollecchia.com/numbers-and-notes.html"><img class="home" id="buycrazygif" src="img/buyAnimated2.gif" alt="BUY NUMBERS AND NOTES"></a>
  
     <!-- Fake quotes -->
-    <img id="fakequotes" src="img/quotes.gif" alt="PRETTY MUCH THE BEST BOOK EVER. - JOSEPH FOURIER. WISH I HAD THOUGHT OF THIS FIRST!!! - HERMANN VON HELMHOLTZ. INCOMPREHENSIBLE. - HEINRICH SCHENKER."/>
+    <img class="home" id="fakequotes" src="img/quotes.gif" alt="PRETTY MUCH THE BEST BOOK EVER. - JOSEPH FOURIER. WISH I HAD THOUGHT OF THIS FIRST!!! - HERMANN VON HELMHOLTZ. INCOMPREHENSIBLE. - HEINRICH SCHENKER."/>
       
     <!-- Contact -->
-    <a href="mailto:ginacollecchia@gmail.com"><img id="contact" src="img/contact2020.gif" alt="HIT ME UP. GINA COLLECCHIA // SANTA FE, NM // GUESS MY EMAIL // (502)216-4653"></a>
-    <!--<map name="contactMap">
-    	<area shape="rect" alt="email" coords="80,300,520,370" href="mailto:gina@ginacollecchia.com">
-	  </map>-->
+    <a href="mailto:ginacollecchia@gmail.com"><img class="home" id="contact" src="img/contact2020.gif" alt="HIT ME UP. GINA COLLECCHIA // SANTA FE, NM // GUESS MY EMAIL // (502)216-4653"></a>
     
     <!-- Copyright -->
-    <img id="copyhome" src="img/copy2020.gif" alt="&copy; 2020 Gina Collecchia">
+    <img class="home" id="copyhome" src="img/copy2020.gif" alt="&copy; 2020 Gina Collecchia">
   </div>
+</div>
 </div>
   
   <!-- Google analytics -->

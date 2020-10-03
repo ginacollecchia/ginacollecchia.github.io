@@ -2,16 +2,8 @@
   text-align: center;
 }
 
-.row#home {
-  background-color: #466fbb;
-}
-
-.row#index, .row#kitty {
+body#kitty {
   background-color: #42cb4c;
-}
-
-.row#cv {
-  background-color: #d6c4bf;
 }
 
 .span16 {
@@ -21,13 +13,22 @@
 img, iframe {
   display: block;
   border: 0px;
-  margin: 10px auto;
+  margin: 18px auto;
+}
+
+img.home {
   width: 600px;
   height: auto;
 }
 
 iframe {
   margin: 30px auto;
+}
+
+/* Home CSS */
+
+body#home {
+  background-color: #466fbb;
 }
 
 img.paintcolors, img#sendButtonImg, img#clearButtonImg {
@@ -44,16 +45,8 @@ img#sendButtonImg, img#clearButtonImg {
   height: auto;
 }
 
-img#buycrazygif {
-  margin-top:200px;
-}
-
 img#fakequotes {
   margin-bottom: 0px;
-}
-
-img#copyhome, img#contact {
-  position: relative;
 }
 
 img.paintcolors {
@@ -133,12 +126,70 @@ a#clearButton, a#sendButton {
   border: none;
 }
 
-img#photography, img#about {
+img#hello {
+  margin-top: 20px;
+}
+
+img#about, img#likes {
   margin-top: -10px;
 }
 
-img.cv {
+img#buycrazygif {
+  margin-top:240px;
   width: 800px;
+}
+
+img#fakequotes {
+  width: 450px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img#contact {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+img#buySticker {
+	width: 252px;
+	height: auto;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+/* CV CSS */
+
+.row#cvitem {
+  height: 200px;
+  margin: 40px auto;
+}
+
+body#cv {
+  background-color: #d6c4bf;
+}
+
+.col {
+
+}
+
+img.cvlogo {
+  max-width: 350px;
+  max-height: 200px;
+  vertical-align: middle;
+}
+
+img#cveducation {
+  width: 800px;
+  margin-bottom: 40px;
+}
+
+img#mwLogo, img#appleLogo, img#soundhoundLogo, img#djzLogo {
+}
+
+img.cvjobtitle {
+  height: 140px;
+  vertical-align: middle;
 }
 
 /* mobile view */
@@ -149,14 +200,6 @@ img.cv {
 	}
 }
   
-img#buySticker {
-	width: 252px;
-	height: auto;
-	position: fixed;
-	right: 20px;
-	top: 20px;
-}
-
 /* Form stuff */
 form {
 	width: 600px;

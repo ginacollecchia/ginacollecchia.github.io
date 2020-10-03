@@ -9,96 +9,128 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" >
   
   <title>Gina Collecchia // CV</title>
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <script type="text/javascript" src="scripts/controller.js"></script>
 </head>
 
-<body onload="setup()">
-  <div class="row" id="cv">
+<body onload="setup()" id="cv">
+<div class="container">
+  <!-- Education -->
+  <div class="row" id="cveducation">
     <div class="span16">
-      
-    <!-- Education -->
-    <img class="cv" src="img/education.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#educationMap">
-    <map name="educationMap">
-      <area shape="rect" alt="CCRMA" coords="150,180,620,380" href="http://ccrma.stanford.edu/" target="_blank">
-      <area shape="rect" alt="UOFL" coords="0,520,360,760" href="http://louisville.edu/speed" target="_blank">
-      <area shape="rect" alt="REED" coords="400,520,800,760" href="http://www.reed.edu" target="_blank">
-    </map>
-    
-    <!--Meow Wolf -->
-	  <img class="cv" src="img/meowwolfWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#mwMap">
-	  <map name="mwMap">
-			<area shape="rect" alt="Meow Wolf" coords="100,15,280,200" href="http://www.meowwolf.com" target="_blank">
-		</map>
-
-    <!--Spatial -->
-	  <img class="cv" src="img/spatialWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#spatialMap">
-	  <map name="spatialMap">
-			<area shape="rect" alt="Spatial Labs" coords="100,15,280,200" href="http://www.spatiallabs.com" target="_blank">
-		</map>
-    
-    <!-- Jaunt VR -->
-	  <img class="cv" src="img/jauntWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#jauntMap">
-	  <map name="jauntMap">
-			<area shape="rect" alt="Jaunt" coords="100,15,280,200" href="https://www.theverge.com/2019/9/30/20891244/verizon-jaunt-xr-ar-vr-volumetric-video-capture-acquisition" target="_blank">
-		</map>
-    
-    <!-- SoundHound -->
-	  <img class="cv" src="img/soundhoundWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#shMap">
-	  <map name="shMap">
-			<area shape="rect" alt="SoundHound" coords="100,15,280,200" href="http://www.soundhound.com" target="_blank">
-		</map>
-	  
-    <!-- Apple -->
-    <img class="cv" src="img/appleWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#appleMap">
-	  <map name="appleMap">
-			<area shape="rect" alt="Apple" coords="80,15,280,240" href="http://www.apple.com" target="_blank">
-		</map>
-    
-    <!-- DJZ -->
-    <img class="cv" src="img/djzWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#djzMap">
-    <map name="djzMap">
-      <area shape="rect" alt="DJZ" coords="0,0,390,300" href="http://djz.com/" target="_blank">
-    </map>
-        
-    <!-- Sennheiser -->
-    <img class="cv" src="img/sennheiserWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#sennheiserMap">
-    <map name="sennheiserMap">
-      <area shape="rect" alt="Sennheiser" coords="0,0,380,250" href="http://en-us.sennheiser.com" target="_blank">
-    </map>
-    
-    <!-- AutoLean
-    <img class="cv" src="img/autoleanWork.jpg" alt="GINA COLLECCHIA'S RESUME" usemap="#autoleanMap">
-    <map name="autoleanMap">
-      <area shape="rect" alt="DOWNLOAD LOUISVILLE LUSH FOR IPHONE" coords="5,15,100,200" href="http://itunes.apple.com/us/app/louisville-lush/id470414409?ls=1&mt=8" target="_blank">
-      <area shape="rect" alt="AutoLean" coords="130,50,380,150" href="http://autolean.com/" target="_blank">
-    </map> -->
-    
-    <!-- CCRMA -->
-    <img class="cv" src="img/ccrmaWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#ccrmaMap">
-    <map name="ccrmaMap">
-    	<area shape="rect" alt="CHAVIN DE HUANTAR ARCHAEOLOGICAL ACOUSTICS PROJECT" coords="310,120,350,180" href="https://ccrma.stanford.edu/groups/chavin/publications.html#aes133" target="_blank">
-    	<area shape="RECT" alt="THE CENTER FOR COMPUTER RESEARCH IN MUSIC AND ACOUSTICS" coords="100,130,300,180" href="https://ccrma.stanford.edu/" target="_blank">
-    </map>
-    
-    <!-- Heuser Hearing Research Center -->
-    <img class="cv" src="img/heuserWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#heuserMap">
-    <map name="heuserMap">
-      <area shape="rect" alt="heuser" coords="0,0,400,200" href="http://louisville.edu/psychology/zahorik" target="_blank">
-    </map>
-    
-    <!-- PSI Press -->
-    <img class="cv" src="img/psiWork2020.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#psiMap">
-    <map name="psiMap">
-  		<area shape="RECT" alt="PSI PRESS" coords="0,0,400,230" href="http://www.ginacollecchia.com/numbers-and-notes.html" target="_blank">
-    </map>
-
-    <!-- Copyright -->
-    <img class="copy" src="img/copy2020.gif" alt="&copy; 2020 Regina Collecchia">
-
+      <img id="cveducation" src="img/education.gif" alt="GINA COLLECCHIA'S RESUME" usemap="#educationMap">
+      <map name="educationMap">
+        <area shape="rect" alt="CCRMA" coords="150,180,620,380" href="http://ccrma.stanford.edu/" target="_blank">
+        <area shape="rect" alt="UOFL" coords="0,520,360,760" href="http://louisville.edu/speed" target="_blank">
+        <area shape="rect" alt="REED" coords="400,520,800,760" href="http://www.reed.edu" target="_blank">
+      </map>
     </div>
   </div>
+  
+  <!--Meow Wolf -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvmeowwolf">
+	    <a href="https://meowwolf.com" target="_blank"> <img class="cvlogo" id="mwLogo" src="img/mwLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/mwJobTitle.gif" alt="MEOW WOLF: Technical Project Manager, 2019-2020">
+    </div>
+  </div>
+  
+  <!--Spatial -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvspatial">
+	    <a href="https://www.spatiallabs.com" target="_blank"> <img class="cvlogo" id="spatialLogo" src="img/spatialLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/spatialJobTitle.gif" alt="SPATIAL LABS: Senior Audio Software Engineer, 2019">
+    </div>
+  </div>
+    
+  <!-- Jaunt -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvjaunt">
+	    <a href="https://www.theverge.com/2019/9/30/20891244/verizon-jaunt-xr-ar-vr-volumetric-video-capture-acquisition" target="_blank"> <img class="cvlogo" id="jauntLogo" src="img/jauntLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/jauntJobTitle.gif" alt="JAUNT: Senior Audio Software Engineer, 2016-2018">
+    </div>
+  </div>
+    
+  <!-- SoundHound -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvsoundhound">
+	    <a href="https://www.houndify.com/" target="_blank"> <img class="cvlogo" id="soundhoundLogo" src="img/soundhoundLogo.gif" alt="https://houndify.com"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/soundhoundJobTitle.gif" alt="SOUNDHOUND: Research Engineer, 2014-2016">
+    </div>
+  </div>
+	  
+  <!-- Apple -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvapple">
+      <a href="https://www.apple.com/homepod/" target="_blank"> <img class="cvlogo" id="appleLogo" src="img/appleLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/appleJobTitle.gif" alt="APPLE: Acoustics Intern, 2014">
+    </div>
+  </div>
+  
+  <!-- DJZ -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvdjz">
+      <img class="cvlogo" id="djzLogo" src="img/djzLogo.gif">
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/djzJobTitle.gif" alt="DJZ: Head of Audio, 2012-2013">
+    </div>
+  </div>
+   
+  <!-- Sennheiser -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvsennheiser">
+      <a href="https://sennheiser.com" target="_blank"> <img class="cvlogo" id="sennheiserLogo" src="img/sennheiserLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/sennheiserJobTitle.gif" alt="SENNHEISER: Audio Software Intern, 2012">
+    </div>
+  </div>
+    
+  <!-- CCRMA -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvccrma">
+      <a href="https://ccrma.stanford.edu/" target="_blank"> <img class="cvlogo" id="ccrmaLogo" src="img/ccrmaLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/ccrmaJobTitle.gif" alt="CCRMA: Researcher, 2011-2012">
+    </div>
+  </div>
+    
+  <!-- Heuser Hearing Research Center -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvheuser">
+      <a href="http://louisville.edu/psychology/zahorik" target="_blank"> <img class="cvlogo" id="heuserLogo" src="img/heuserLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/heuserJobTitle.gif" alt="HEUSER HEARING LAB: Lab Manager, 2010-2011">
+    </div>
+  </div>
+    
+  <!-- PSI Press -->
+  <div class="row" id="cvitem">
+    <div class="col-4" id="cvpsipress">
+      <a href="numbers-and-notes.html"> <img class="cvlogo" src="img/psipressLogo.gif"> </a>
+    </div>
+    <div class="col-8">
+      <img class="cvjobtitle" src="img/psipressJobTitle.gif" alt="PSI PRESS: Author, 2009-2012">
+    </div>
+  </div>
+  
+  <!-- Copyright -->
+  <img class="copy" src="img/copy2020.gif" alt="&copy; 2020 Regina Collecchia">
+
+</div>
   
   <!-- Google Analytics script -->
   <script type="text/javascript">
