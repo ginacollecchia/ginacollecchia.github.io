@@ -53,10 +53,6 @@ img.paintcolors {
   width: 60px;
 }
 
-img#buy {
-	width: 900px;
-}
-
 #drawbox { 
   width: 600px; 
   height: 600px; 
@@ -95,19 +91,6 @@ a#clearButton, a#sendButton {
   height: 150px;
 }
 
-#typewriter { 
-  text-align: left; 
-  position: absolute;
-  top: 30%; 
-  left: 35%; 
-  font-family: Courier; 
-  font-size: 30px;
-}
-
-[class*="span"] {
-  margin-left: 0px;
-}
-
 #lastnamepronunciation {
   width: 230px;
   height: 50px;
@@ -135,7 +118,6 @@ img#about, img#likes {
 }
 
 img#buycrazygif {
-  margin-top:240px;
   width: 800px;
 }
 
@@ -162,21 +144,12 @@ img#buySticker {
 
 .row#cvitem {
   height: 200px;
-  margin: 40px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 body#cv {
   background-color: #d6c4bf;
-}
-
-.col {
-
-}
-
-img.cvlogo {
-  max-width: 350px;
-  max-height: 200px;
-  vertical-align: middle;
 }
 
 img#cveducation {
@@ -184,23 +157,38 @@ img#cveducation {
   margin-bottom: 40px;
 }
 
-img#mwLogo, img#appleLogo, img#soundhoundLogo, img#djzLogo {
+img.cvlogo {
+  max-width: 350px;
+  max-height: 200px;
+}
+
+img#spatialLogo {
+  margin-top: 70px;
+}
+
+img#ccrmaLogo {
+  margin-top: 30px;
+}
+
+img#heuserLogo {
+  margin-top: 50px;
+}
+
+img#psipressLogo {
+  margin-top: 50px;
 }
 
 img.cvjobtitle {
-  height: 140px;
-  vertical-align: middle;
+  height: 120px;
+  margin-top: 50px;
 }
 
-/* mobile view */
-@media only screen and (max-device-width: 480px) {
-	img {
-		width: 100%;
-		height: auto;
-	}
+img#cvcopy {
+  width: 600px;
+  margin-top: 80px;
 }
-  
-/* Form stuff */
+
+/* Nunbers and Notes page */
 form {
 	width: 600px;
 	margin: 0 auto;
@@ -318,5 +306,22 @@ img#ginacollecchia {
 }
 
 div#wall {
-  height: 600px;
+  height: 1220px;
+}
+
+/* mobile view */
+@media only screen and (max-device-width: 480px) {
+	img.home {
+		width: 100%;
+		height: auto;
+	}
+  
+  form {
+    width: 100%;
+    height: auto;
+  }
+  
+  #wall {
+    display: none;
+  }
 }
