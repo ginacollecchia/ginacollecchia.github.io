@@ -100,7 +100,7 @@ var sendImage = function() {
   $("#wall").css("opacity", 0.5);
   
   var dataURL = canvas[0].toDataURL();
-  $.post('http://ginamail.doormouse.org/send', { data: dataURL }, function(response, status){
+  $.post('https://ginamail.doormouse.org/send', { data: dataURL }, function(response, status){
     sending = false;
     $("#wall").css("opacity", 1.0);
     
@@ -118,7 +118,7 @@ var clearAll = function() {
   $("#wall").css("opacity", 0.5);
   
   var dataURL = canvas[0].toDataURL();
-  $.post('http://ginamail.doormouse.org/send', { data: dataURL }, function(response, status){
+  $.post('https://ginamail.doormouse.org/send', { data: dataURL }, function(response, status){
     sending = false;
     $("#wall").css("opacity", 1.0);
   });
